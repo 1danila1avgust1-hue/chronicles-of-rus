@@ -1,3 +1,4 @@
+import * as React from 'react';
 import { useState } from 'react';
 import { RULE_TABS, RULES_ACTIONS, type RuleTab } from '@/data/game';
 
