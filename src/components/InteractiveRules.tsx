@@ -195,7 +195,7 @@ function Special() {
   );
 }
 
-const RENDERERS: Record<RuleTab, () => JSX.Element> = {
+const RENDERERS: Record<RuleTab, () => React.ReactElement> = {
   goal: Goal,
   components: Components,
   preparation: Preparation,
