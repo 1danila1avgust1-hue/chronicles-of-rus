@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Marck+Script&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap');
 @import "tailwindcss" source(none);
 @source "../src";
 @import "tw-animate-css";
@@ -59,42 +60,70 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --color-gold: var(--gold);
+  --color-gold-bright: var(--gold-bright);
+  --color-parchment: var(--parchment);
+  --color-parchment-dark: var(--parchment-dark);
+  --color-burgundy: var(--burgundy);
+  --color-burgundy-dark: var(--burgundy-dark);
+  --color-ink: var(--ink);
+  --color-ink-deep: var(--ink-deep);
+  --font-display: 'Cinzel', serif;
+  --font-serif: 'PT Serif', Georgia, serif;
+  --font-script: 'Marck Script', cursive;
 }
 
 :root {
-  --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.129 0.042 264.695);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.208 0.042 265.755);
-  --primary-foreground: oklch(0.984 0.003 247.858);
-  --secondary: oklch(0.968 0.007 247.896);
-  --secondary-foreground: oklch(0.208 0.042 265.755);
-  --muted: oklch(0.968 0.007 247.896);
-  --muted-foreground: oklch(0.554 0.046 257.417);
-  --accent: oklch(0.968 0.007 247.896);
-  --accent-foreground: oklch(0.208 0.042 265.755);
+  --radius: 0.5rem;
+  /* Вехи Времени — Ancient Rus palette */
+  --parchment: oklch(0.93 0.04 80);
+  --parchment-dark: oklch(0.82 0.05 75);
+  --gold: oklch(0.78 0.13 80);
+  --gold-bright: oklch(0.86 0.16 85);
+  --burgundy: oklch(0.35 0.13 25);
+  --burgundy-dark: oklch(0.25 0.11 25);
+  --ink: oklch(0.18 0.03 40);
+  --ink-deep: oklch(0.12 0.02 40);
+
+  --background: oklch(0.14 0.02 40);
+  --foreground: oklch(0.93 0.04 80);
+  --card: oklch(0.18 0.03 40);
+  --card-foreground: oklch(0.93 0.04 80);
+  --popover: oklch(0.18 0.03 40);
+  --popover-foreground: oklch(0.93 0.04 80);
+  --primary: oklch(0.35 0.13 25);
+  --primary-foreground: oklch(0.93 0.04 80);
+  --secondary: oklch(0.22 0.04 40);
+  --secondary-foreground: oklch(0.93 0.04 80);
+  --muted: oklch(0.22 0.04 40);
+  --muted-foreground: oklch(0.78 0.05 75);
+  --accent: oklch(0.78 0.13 80);
+  --accent-foreground: oklch(0.18 0.03 40);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.929 0.013 255.508);
-  --input: oklch(0.929 0.013 255.508);
-  --ring: oklch(0.704 0.04 256.788);
+  --border: oklch(0.78 0.13 80 / 25%);
+  --input: oklch(0.78 0.13 80 / 25%);
+  --ring: oklch(0.78 0.13 80);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.984 0.003 247.858);
-  --sidebar-foreground: oklch(0.129 0.042 264.695);
-  --sidebar-primary: oklch(0.208 0.042 265.755);
-  --sidebar-primary-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-accent: oklch(0.968 0.007 247.896);
-  --sidebar-accent-foreground: oklch(0.208 0.042 265.755);
-  --sidebar-border: oklch(0.929 0.013 255.508);
-  --sidebar-ring: oklch(0.704 0.04 256.788);
+  --sidebar: oklch(0.18 0.03 40);
+  --sidebar-foreground: oklch(0.93 0.04 80);
+  --sidebar-primary: oklch(0.35 0.13 25);
+  --sidebar-primary-foreground: oklch(0.93 0.04 80);
+  --sidebar-accent: oklch(0.22 0.04 40);
+  --sidebar-accent-foreground: oklch(0.78 0.13 80);
+  --sidebar-border: oklch(0.78 0.13 80 / 25%);
+  --sidebar-ring: oklch(0.78 0.13 80);
+
+  --gradient-burgundy: linear-gradient(135deg, oklch(0.35 0.13 25), oklch(0.22 0.11 25));
+  --gradient-gold: linear-gradient(135deg, oklch(0.86 0.16 85), oklch(0.7 0.13 70));
+  --gradient-hero: radial-gradient(ellipse at top, oklch(0.22 0.08 30), oklch(0.1 0.02 40) 70%);
+  --shadow-card: 0 20px 50px -20px oklch(0 0 0 / 0.7), 0 0 0 1px oklch(0.78 0.13 80 / 0.15);
+  --shadow-glow: 0 0 40px oklch(0.78 0.13 80 / 0.3);
+  --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .dark {
@@ -140,5 +169,49 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: 'PT Serif', Georgia, serif;
+    background-image:
+      radial-gradient(ellipse at 20% 0%, oklch(0.22 0.08 30 / 0.6), transparent 60%),
+      radial-gradient(ellipse at 80% 100%, oklch(0.25 0.1 30 / 0.4), transparent 60%);
+    background-attachment: fixed;
   }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.04em;
+  }
+}
+
+@layer utilities {
+  .text-gold { color: var(--gold); }
+  .text-gold-bright { color: var(--gold-bright); }
+  .bg-burgundy { background: var(--burgundy); }
+  .bg-gradient-burgundy { background: var(--gradient-burgundy); }
+  .bg-gradient-gold { background: var(--gradient-gold); }
+  .bg-gradient-hero { background: var(--gradient-hero); }
+  .shadow-card { box-shadow: var(--shadow-card); }
+  .shadow-glow { box-shadow: var(--shadow-glow); }
+  .transition-smooth { transition: var(--transition-smooth); }
+  .font-script { font-family: 'Marck Script', cursive; }
+  .border-gold { border-color: var(--gold); }
+  .border-gold-soft { border-color: oklch(0.78 0.13 80 / 0.3); }
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+.animate-float { animation: float-slow 6s ease-in-out infinite; }
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+.animate-shimmer {
+  background: linear-gradient(90deg, var(--gold) 0%, var(--gold-bright) 50%, var(--gold) 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 4s linear infinite;
 }
