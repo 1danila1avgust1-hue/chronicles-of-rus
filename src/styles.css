@@ -62,9 +62,19 @@
 }
 
 :root {
-  --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
+  --radius: 0.5rem;
+  /* Вехи Времени — Ancient Rus palette */
+  --parchment: oklch(0.93 0.04 80);
+  --parchment-dark: oklch(0.82 0.05 75);
+  --gold: oklch(0.78 0.13 80);
+  --gold-bright: oklch(0.86 0.16 85);
+  --burgundy: oklch(0.35 0.13 25);
+  --burgundy-dark: oklch(0.25 0.11 25);
+  --ink: oklch(0.18 0.03 40);
+  --ink-deep: oklch(0.12 0.02 40);
+
+  --background: oklch(0.14 0.02 40);
+  --foreground: oklch(0.93 0.04 80);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.129 0.042 264.695);
   --popover: oklch(1 0 0);
