@@ -1,3 +1,16 @@
+import krestyaninImg from '@/assets/cards/krestyanin.jpg';
+import druzhinnikImg from '@/assets/cards/druzhinnik.jpg';
+import kupetsImg from '@/assets/cards/kupets.jpg';
+import horomyImg from '@/assets/cards/horomy.jpg';
+import krepostImg from '@/assets/cards/krepost.jpg';
+import nabegImg from '@/assets/cards/nabeg.jpg';
+import urozhayImg from '@/assets/cards/urozhay.jpg';
+import vosstanieImg from '@/assets/cards/vosstanie.jpg';
+import kreshenieImg from '@/assets/cards/kreshenie.jpg';
+import pechenegiImg from '@/assets/cards/pechenegi.jpg';
+import ryurikImg from '@/assets/cards/ryurik.jpg';
+import monomakhImg from '@/assets/cards/monomakh.jpg';
+
 export type CardCategory = 'Люди' | 'Сооружения' | 'Действия' | 'События' | 'Наследие';
 
 export interface GameCardData {
@@ -7,7 +20,7 @@ export interface GameCardData {
   desc: string;
   cost: string;
   bonus: string;
-  glyph: string;
+  image: string;
 }
 
 export const TEAM = [
@@ -18,18 +31,18 @@ export const TEAM = [
 ];
 
 export const CARDS: GameCardData[] = [
-  { id: 1,  name: 'Крестьянин',         type: 'Люди',       desc: 'Приносит 2 Еды каждый раунд. Основа любого поселения.',                                       cost: '0',         bonus: '+2 🌾',     glyph: '🌾' },
-  { id: 2,  name: 'Дружинник',          type: 'Люди',       desc: 'Даёт 1 Военную мощь. Защищает от направленных Действий.',                                     cost: '1 🌾',      bonus: '+1 ⚔️',    glyph: '🛡️' },
-  { id: 3,  name: 'Купец',              type: 'Люди',       desc: 'Приносит 2 Монеты. Синергия с Торжищем удваивает доход.',                                     cost: '2 💰',      bonus: '+2 💰',    glyph: '⚖️' },
-  { id: 4,  name: 'Хоромы',             type: 'Сооружения', desc: 'Большой дом знатного боярина. Даёт +1 ПЗ и бонус к найму Людей.',                             cost: '3 💰',      bonus: '+1 ПЗ',    glyph: '🏛️' },
-  { id: 5,  name: 'Крепость',           type: 'Сооружения', desc: 'Мощная стена с башнями. Даёт +2 Военной мощи и защищает от Набегов.',                         cost: '4 💰',      bonus: '+2 ⚔️',    glyph: '🏰' },
-  { id: 6,  name: 'Набег',              type: 'Действия',   desc: 'Выберите цель — соперник теряет 1 Военную мощь. Дружинник может отразить.',                  cost: '1 ⚔️',     bonus: '−1 ⚔️ врагу', glyph: '🔥' },
-  { id: 7,  name: 'Урожай',             type: 'Действия',   desc: 'Соберите богатый урожай — получите 3 Еды немедленно.',                                        cost: '0',         bonus: '+3 🌾',    glyph: '🌻' },
-  { id: 8,  name: 'Восстание Древлян',  type: 'События',    desc: 'Игрок с наибольшим числом Сооружений теряет 2 Еды или 1 Дружинника. Остальные платят 1 Монету.', cost: '—',     bonus: 'Штраф',    glyph: '⚔️' },
-  { id: 9,  name: 'Крещение Руси',      type: 'События',    desc: '988 г. Выбор: принять веру (+2 ПЗ, −1 Военная мощь) или заплатить 2 Монеты.',                cost: '—',         bonus: 'Выбор',    glyph: '✝' },
-  { id: 10, name: 'Набег Печенегов',    type: 'События',    desc: 'Каждый игрок теряет 1 Военную мощь. Кто не может — теряет 2 Монеты.',                         cost: '—',         bonus: '−1 ⚔️ всем', glyph: '🏹' },
-  { id: 11, name: 'Рюрик',              type: 'Наследие',   desc: 'Варяжский князь. Раз за раунд можно взять 1 дополнительную карту бесплатно. +3 ПЗ в финале.',  cost: 'Аукцион',   bonus: '+3 ПЗ',    glyph: '👑' },
-  { id: 12, name: 'Мономах',            type: 'Наследие',   desc: 'Князь-мудрец. Игнорируй одно Событие за игру. Каждая книга (Сооружение) даёт +1 ПЗ.',         cost: 'Аукцион',   bonus: '+2 ПЗ',    glyph: '📜' },
+  { id: 1,  name: 'Крестьянин',         type: 'Люди',       desc: 'Бородатый мужчина в льняной рубахе с серпом. На заднем плане — изба и поле со снопами. Приносит 2 Еды каждый раунд — основа любого поселения.', cost: '0',       bonus: '+2 🌾',       image: krestyaninImg },
+  { id: 2,  name: 'Дружинник',          type: 'Люди',       desc: 'Воин в кольчуге и шлеме, с круглым щитом, мечом и копьём. За ним — крепостная стена. Даёт 1 Военную мощь и защищает от направленных Действий.', cost: '1 🌾',    bonus: '+1 ⚔️',       image: druzhinnikImg },
+  { id: 3,  name: 'Купец',              type: 'Люди',       desc: 'Богато одетый мужчина в кафтане и меховой шапке. На поясе кошель, за спиной — ладья на реке. Приносит 2 Монеты, синергия с Торжищем удваивает доход.', cost: '2 💰',  bonus: '+2 💰',       image: kupetsImg },
+  { id: 4,  name: 'Хоромы',             type: 'Сооружения', desc: 'Большой деревянный дом боярина с резными наличниками и высоким крыльцом. За ним — сад. Даёт +1 ПЗ и бонус к найму Людей.',                       cost: '3 💰',     bonus: '+1 ПЗ',       image: horomyImg },
+  { id: 5,  name: 'Крепость',           type: 'Сооружения', desc: 'Мощная крепостная стена из брёвен с башнями и воротами. На башнях — дозорные. Даёт +2 Военной мощи и защищает от Набегов.',                     cost: '4 💰',     bonus: '+2 ⚔️',       image: krepostImg },
+  { id: 6,  name: 'Набег',              type: 'Действия',   desc: 'Конные степняки с кривыми саблями атакуют обоз — повозки опрокинуты. Выберите цель: соперник теряет 1 Военную мощь. Дружинник может отразить.', cost: '1 ⚔️',    bonus: '−1 ⚔️ врагу', image: nabegImg },
+  { id: 7,  name: 'Урожай',             type: 'Действия',   desc: 'Сжатое золотое поле, крестьяне с серпами под ярким солнцем. Соберите богатый урожай — получите 3 Еды немедленно.',                              cost: '0',         bonus: '+3 🌾',       image: urozhayImg },
+  { id: 8,  name: 'Восстание Древлян',  type: 'События',    desc: 'Разъярённые древляне в звериных шкурах с топорами окружают князя Игоря. Игрок с наибольшим числом Сооружений теряет 2 Еды или 1 Дружинника, остальные платят 1 Монету.', cost: '—', bonus: 'Штраф',  image: vosstanieImg },
+  { id: 9,  name: 'Крещение Руси',      type: 'События',    desc: '988 г. Владимир и священники крестят народ в Днепре, на берегу — поверженный идол. Выбор: принять веру (+2 ПЗ, −1 ВМ) или заплатить 2 Монеты.', cost: '—',     bonus: 'Выбор',       image: kreshenieImg },
+  { id: 10, name: 'Набег Печенегов',    type: 'События',    desc: 'Степные всадники с луками скачут к стенам Киева, горящие дома. Каждый игрок теряет 1 Военную мощь; кто не может — теряет 2 Монеты.',           cost: '—',         bonus: '−1 ⚔️ всем',  image: pechenegiImg },
+  { id: 11, name: 'Рюрик',              type: 'Наследие',   desc: 'Варяжский князь в шлеме и кольчуге, с мечом в руке. За спиной — ладья. Раз за раунд можно взять 1 дополнительную карту бесплатно. +3 ПЗ в финале.', cost: 'Аукцион', bonus: '+3 ПЗ',     image: ryurikImg },
+  { id: 12, name: 'Мономах',            type: 'Наследие',   desc: 'Князь в воинском облачении с крестом: в одной руке меч, в другой — книга. Игнорируй одно Событие за игру; каждое Сооружение даёт +1 ПЗ.',       cost: 'Аукцион',   bonus: '+2 ПЗ',       image: monomakhImg },
 ];
 
 export const CATEGORY_FILTERS: { key: CardCategory | 'Все'; label: string }[] = [

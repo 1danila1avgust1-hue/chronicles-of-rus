@@ -271,16 +271,24 @@ function Contacts() {
         <p className="text-parchment-dark/85 leading-relaxed">
           Хотите поддержать проект, заказать копию игры или предложить сотрудничество? Свяжитесь с нашей командой.
         </p>
-        <div className="grid sm:grid-cols-2 gap-4 mt-8 text-left">
+        <div className="grid sm:grid-cols-3 gap-4 mt-8 text-left">
           <div className="rounded-lg border border-gold/20 bg-burgundy/10 p-4">
             <div className="font-display text-gold/70 text-xs tracking-widest uppercase mb-1">Электронная почта</div>
-            <a href="mailto:vehi.vremeni@example.ru" className="text-parchment hover:text-gold transition-smooth">
-              vehi.vremeni@example.ru
+            <a href="mailto:ksushgolovina@yandex.ru" className="text-parchment hover:text-gold transition-smooth break-all">
+              ksushgolovina@yandex.ru
             </a>
           </div>
           <div className="rounded-lg border border-gold/20 bg-burgundy/10 p-4">
-            <div className="font-display text-gold/70 text-xs tracking-widest uppercase mb-1">Telegram</div>
-            <a href="#" className="text-parchment hover:text-gold transition-smooth">@vehi_vremeni</a>
+            <div className="font-display text-gold/70 text-xs tracking-widest uppercase mb-1">Телефон</div>
+            <a href="tel:+79121660260" className="text-parchment hover:text-gold transition-smooth">
+              +7 (912) 166-02-60
+            </a>
+          </div>
+          <div className="rounded-lg border border-gold/20 bg-burgundy/10 p-4">
+            <div className="font-display text-gold/70 text-xs tracking-widest uppercase mb-1">ВКонтакте</div>
+            <a href="https://vk.com/ksuhg" target="_blank" rel="noopener noreferrer" className="text-parchment hover:text-gold transition-smooth">
+              vk.com/ksuhg
+            </a>
           </div>
         </div>
       </div>
