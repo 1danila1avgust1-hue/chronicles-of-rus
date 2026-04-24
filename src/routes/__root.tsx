@@ -29,14 +29,18 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Настольная игра Вехи времени" },
+      { name: "description", content: "Chronicles of Rus is a card game simulating the development of ancient Rus." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Настольная игра Вехи времени" },
+      { property: "og:description", content: "Chronicles of Rus is a card game simulating the development of ancient Rus." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Настольная игра Вехи времени" },
+      { name: "twitter:description", content: "Chronicles of Rus is a card game simulating the development of ancient Rus." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/94c1dd39-386c-4830-b5fb-585316526963/id-preview-f09abcc2--0d902a05-9d2e-4f03-b32f-340b22c2ab64.lovable.app-1777037680651.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/94c1dd39-386c-4830-b5fb-585316526963/id-preview-f09abcc2--0d902a05-9d2e-4f03-b32f-340b22c2ab64.lovable.app-1777037680651.png" },
     ],
     links: [
       {
